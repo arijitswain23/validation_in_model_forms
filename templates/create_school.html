@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>create_school</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Create School Form
+        </h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ESFO.as_p}}
+
+            <input type="submit" value="Create School">
+        </form>
+    </center>
+</body>
+</html>
